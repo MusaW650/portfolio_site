@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/kevinRushLogo.png";
+import logo from "../assets/logo.png";
 import { FaGit, FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 // import {FaLinkedin} from "react-icons/fa"
@@ -12,8 +12,12 @@ export const Navbar = () => {
         <img className="mx-2 w-10" src={logo} alt="logo" />
       </div>
       <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-        <FaLinkedin />
-        <FaGithub />
+      <a href="https://www.linkedin.com/in/musa-waseem650/" target="_blank" rel="noopener noreferrer">
+          <FaLinkedin />
+        </a>
+        <a href="https://github.com/MusaW650" target="_blank" rel="noopener noreferrer">
+          <FaGithub />
+        </a>
       </div>
     </nav>
   );
